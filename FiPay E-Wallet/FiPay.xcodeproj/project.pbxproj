@@ -13,6 +13,10 @@
 		8918621327A97C6A0057E09F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8918621127A97C6A0057E09F /* Main.storyboard */; };
 		8918621527A97C6B0057E09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8918621427A97C6B0057E09F /* Assets.xcassets */; };
 		8918621827A97C6B0057E09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8918621627A97C6B0057E09F /* LaunchScreen.storyboard */; };
+		89855E8527AB5CAC003E14D6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89855E8427AB5CAC003E14D6 /* SettingsViewController.swift */; };
+		89B7E2D327AB4D69002739A2 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B7E2D227AB4D69002739A2 /* CreateViewController.swift */; };
+		89B7E2D527AB4EEF002739A2 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B7E2D427AB4EEF002739A2 /* CardViewController.swift */; };
+		89D082D727AAE7A80046A8B7 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D082D627AAE7A80046A8B7 /* SignViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8918621427A97C6B0057E09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8918621727A97C6B0057E09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8918621927A97C6B0057E09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89855E8427AB5CAC003E14D6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		89B7E2D227AB4D69002739A2 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		89B7E2D427AB4EEF002739A2 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		89D082D627AAE7A80046A8B7 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		8918620A27A97C6A0057E09F /* FiPay */ = {
 			isa = PBXGroup;
 			children = (
+				89D082D527AAE7260046A8B7 /* Controllers */,
 				8918620B27A97C6A0057E09F /* AppDelegate.swift */,
 				8918620D27A97C6A0057E09F /* SceneDelegate.swift */,
-				8918620F27A97C6A0057E09F /* ViewController.swift */,
 				8918621127A97C6A0057E09F /* Main.storyboard */,
 				8918621427A97C6B0057E09F /* Assets.xcassets */,
 				8918621627A97C6B0057E09F /* LaunchScreen.storyboard */,
 				8918621927A97C6B0057E09F /* Info.plist */,
 			);
 			path = FiPay;
+			sourceTree = "<group>";
+		};
+		89D082D527AAE7260046A8B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8918620F27A97C6A0057E09F /* ViewController.swift */,
+				89D082D627AAE7A80046A8B7 /* SignViewController.swift */,
+				89B7E2D227AB4D69002739A2 /* CreateViewController.swift */,
+				89B7E2D427AB4EEF002739A2 /* CardViewController.swift */,
+				89855E8427AB5CAC003E14D6 /* SettingsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B7E2D327AB4D69002739A2 /* CreateViewController.swift in Sources */,
 				8918621027A97C6A0057E09F /* ViewController.swift in Sources */,
+				89855E8527AB5CAC003E14D6 /* SettingsViewController.swift in Sources */,
+				89B7E2D527AB4EEF002739A2 /* CardViewController.swift in Sources */,
 				8918620C27A97C6A0057E09F /* AppDelegate.swift in Sources */,
 				8918620E27A97C6A0057E09F /* SceneDelegate.swift in Sources */,
+				89D082D727AAE7A80046A8B7 /* SignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +311,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FiPay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,6 +329,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxwell.FiPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,8 +341,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FiPay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,6 +359,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxwell.FiPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
