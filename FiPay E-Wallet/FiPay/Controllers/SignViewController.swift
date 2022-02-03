@@ -8,14 +8,23 @@
 import UIKit
 
 class SignViewController: UIViewController {
-
+    
+    @IBOutlet weak var signInTxtField: UITextField!
+    
+    @IBOutlet weak var passwordTxtField: UITextField!
+    
+    @IBOutlet weak var signInOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-        // Do any additional setup after loading the view.
+        signInOutlet.layer.cornerRadius = 8
+                
     }
     
+    @IBAction func signInBtn(_ sender: Any) {
+        
+    }
     
 
 }
