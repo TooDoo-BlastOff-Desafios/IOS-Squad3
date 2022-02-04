@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890DE27B27ACF164009543B5 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DE27A27ACF164009543B5 /* TransactionsViewController.swift */; };
+		890DE27E27AD071C009543B5 /* Net Cadaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DE27D27AD071C009543B5 /* Net Cadaster.swift */; };
+		890DE28127AD0903009543B5 /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DE28027AD0903009543B5 /* Cadastro.swift */; };
+		890DE28327AD0B53009543B5 /* cadaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890DE28227AD0B53009543B5 /* cadaster.swift */; };
 		8918620C27A97C6A0057E09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918620B27A97C6A0057E09F /* AppDelegate.swift */; };
 		8918620E27A97C6A0057E09F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918620D27A97C6A0057E09F /* SceneDelegate.swift */; };
 		8918621027A97C6A0057E09F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918620F27A97C6A0057E09F /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890DE27A27ACF164009543B5 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		890DE27D27AD071C009543B5 /* Net Cadaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Net Cadaster.swift"; sourceTree = "<group>"; };
+		890DE28027AD0903009543B5 /* Cadastro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
+		890DE28227AD0B53009543B5 /* cadaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cadaster.swift; sourceTree = "<group>"; };
 		8918620827A97C6A0057E09F /* FiPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8918620B27A97C6A0057E09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8918620D27A97C6A0057E09F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890DE27C27AD06DA009543B5 /* Service API */ = {
+			isa = PBXGroup;
+			children = (
+				890DE27D27AD071C009543B5 /* Net Cadaster.swift */,
+			);
+			path = "Service API";
+			sourceTree = "<group>";
+		};
+		890DE27F27AD08B3009543B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				890DE28027AD0903009543B5 /* Cadastro.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		890DE28427AD0B5A009543B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				890DE28227AD0B53009543B5 /* cadaster.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		891861FF27A97C6A0057E09F = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +96,10 @@
 		8918620A27A97C6A0057E09F /* FiPay */ = {
 			isa = PBXGroup;
 			children = (
+				890DE28427AD0B5A009543B5 /* Extensions */,
+				890DE27C27AD06DA009543B5 /* Service API */,
 				89D082D527AAE7260046A8B7 /* Controllers */,
+				890DE27F27AD08B3009543B5 /* Model */,
 				8918620B27A97C6A0057E09F /* AppDelegate.swift */,
 				8918620D27A97C6A0057E09F /* SceneDelegate.swift */,
 				8918621127A97C6A0057E09F /* Main.storyboard */,
@@ -83,6 +118,7 @@
 				89B7E2D227AB4D69002739A2 /* CreateViewController.swift */,
 				89B7E2D427AB4EEF002739A2 /* CardViewController.swift */,
 				89855E8427AB5CAC003E14D6 /* SettingsViewController.swift */,
+				890DE27A27ACF164009543B5 /* TransactionsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -159,12 +195,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B7E2D327AB4D69002739A2 /* CreateViewController.swift in Sources */,
+				890DE27E27AD071C009543B5 /* Net Cadaster.swift in Sources */,
 				8918621027A97C6A0057E09F /* ViewController.swift in Sources */,
 				89855E8527AB5CAC003E14D6 /* SettingsViewController.swift in Sources */,
 				89B7E2D527AB4EEF002739A2 /* CardViewController.swift in Sources */,
 				8918620C27A97C6A0057E09F /* AppDelegate.swift in Sources */,
+				890DE28127AD0903009543B5 /* Cadastro.swift in Sources */,
 				8918620E27A97C6A0057E09F /* SceneDelegate.swift in Sources */,
 				89D082D727AAE7A80046A8B7 /* SignViewController.swift in Sources */,
+				890DE28327AD0B53009543B5 /* cadaster.swift in Sources */,
+				890DE27B27ACF164009543B5 /* TransactionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
