@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class CreateViewController: UIViewController {
     @IBOutlet weak var streetField: UITextField!
     @IBOutlet weak var createButton: UIButton!
     
+    @IBOutlet weak var passwordField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +28,16 @@ class CreateViewController: UIViewController {
     }
     
     @IBAction func createAccountBtn(_ sender: Any){
-        performSegue(withIdentifier: "cardCreate", sender: self)
+        if let email = addressField.text, let password = passwordField.text {
+                    Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                        if let e = error {
+                            print(e.localizedDescription)
+                        } else {
+                            self.performSegue(withIdentifier: "cardCreate", sender: self)
+                        }
+
+                    }
+                }
     }
     
 

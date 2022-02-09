@@ -27,5 +27,8 @@ class SettingsViewController: UIViewController {
         performSegue(withIdentifier: "myCard", sender: self)
     }
     
+    @IBAction func accountButton(_ sender: Any) {
+        performSegue(withIdentifier: "accountYour", sender: self)
+    }
     
 }

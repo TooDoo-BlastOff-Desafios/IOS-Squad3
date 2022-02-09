@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignViewController: UIViewController {
     
@@ -23,6 +24,16 @@ class SignViewController: UIViewController {
     }
     
     @IBAction func signInBtn(_ sender: Any) {
+        if let email = signInTxtField.text, let password = passwordTxtField.text {
+                    Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                        if let e = error {
+                            print(e.localizedDescription)
+                        } else {
+                            self.performSegue(withIdentifier: "LoginToHome", sender: self)
+                        }
+
+                    }
+                }
         
     }
     
